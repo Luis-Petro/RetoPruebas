@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="I as a OpenCard user" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-04T20:11:39" hostname="CHMEPPF350WY6" time="23.63">
+<testsuite name="I as a OpenCard user" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-04T20:33:37" hostname="CHMEPPF350WY6" time="23.955">
   <properties/>
-  <testcase name="verify that product cannot be edited" classname="I as a OpenCard user" time="13.905"/>
-  <testcase name="Create new product" classname="I as a OpenCard user" time="9.721"/>
+  <testcase name="verify that product cannot be edited" classname="I as a OpenCard user" time="14.206"/>
+  <testcase name="Create new product" classname="I as a OpenCard user" time="9.745"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[May 04, 2022 3:11:39 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[May 04, 2022 3:33:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 100.0.4896.20 (f9d71f93d32a6487809d6f35a9670c879fe97dfe-refs/branch-heads/4896@{#203}) on port 29241
+Starting ChromeDriver 100.0.4896.20 (f9d71f93d32a6487809d6f35a9670c879fe97dfe-refs/branch-heads/4896@{#203}) on port 21605
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 04, 2022 3:11:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 04, 2022 3:33:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -22,9 +22,9 @@ INFO: Detected dialect: W3C
 
 TEST PASSED: verify that product cannot be edited
 ----------------------------------------------------------------------------
-May 04, 2022 3:11:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+May 04, 2022 3:33:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-May 04, 2022 3:11:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 04, 2022 3:33:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  

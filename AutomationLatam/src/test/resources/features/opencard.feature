@@ -2,8 +2,8 @@
 
 @stories
 Feature: I as a OpenCard user
-  I want to be able to edit a product
-  to update your information
+  I want to be able to do operations on products
+  to manage them
 
   Background:
     Given than user enters the website
@@ -11,6 +11,7 @@ Feature: I as a OpenCard user
           | user | password |
           | demo |    demo  |
 
+@Scenario1
   Scenario Outline:  verify that product cannot be edited
     Given than user navigate to the product edit screen
           | productName |
@@ -26,7 +27,7 @@ Feature: I as a OpenCard user
       | productName | newProductName | errorMessage|
       | Apple       |  Ipad          |  Warning: You do not have permission to modify products!|
 
-
+@Scenario2
     Scenario Outline: Create new product
 
       Given than user navigate to the new product screen
@@ -40,3 +41,5 @@ Feature: I as a OpenCard user
       Examples:
         | productName | metaTagTitle | model | errorMessage |
         | CamaraWeb   | Logitech     | E30   |Warning: You do not have permission to modify products!|
+
+@Scenario3
