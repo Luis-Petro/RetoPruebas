@@ -13,6 +13,8 @@ import java.util.List;
 import static choucairtesting.userinterface.OpenCardHomePage.*;
 import static choucairtesting.userinterface.OpenCardHomePage.BUTTONFILTER;
 
+import net.serenitybdd.screenplay.actions.Hit;
+import org.openqa.selenium.Keys;
 public class DeleteProduct implements Task {
 
     private List<ProductData> dt;
@@ -29,7 +31,9 @@ public class DeleteProduct implements Task {
                 Enter.theValue(dt.get(0).getProductName()).into(PRODUCTNAME),
                 Click.on(BUTTONFILTER),
                 Click.on(CHECKBOX),
-                Click.on(BUTTONDELETE).thenHit()
+                Click.on(BUTTONDELETE),
+                Hit.the(Keys.ENTER).keyIn(BUTTONDELETE)
+
 
 
 

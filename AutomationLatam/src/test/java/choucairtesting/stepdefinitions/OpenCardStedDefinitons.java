@@ -67,5 +67,6 @@ public class OpenCardStedDefinitons {
 
     @Given("^than user navigate to the product delete screen$")
     public void thanUserNavigateToTheProductDeleteScreen() {
+
     }
 }
