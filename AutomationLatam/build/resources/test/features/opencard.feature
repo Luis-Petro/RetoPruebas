@@ -41,3 +41,17 @@ Feature: I as a OpenCard user
       Examples:
         | productName | metaTagTitle | model | errorMessage |
         | CamaraWeb   | Logitech     | E30   |Warning: You do not have permission to modify products!|
+
+@Scenario3
+      Scenario Outline: Delete product
+        Given than user navigate to the product delete screen
+        When Select a product to delete
+          | productName |
+          |<productName>|
+        Then  verify that you do not have permissions
+          | errorMessage |
+          |<errorMessage>|
+
+         Examples:
+           | productName | errorMessage |
+           |   Canon     |Warning: You do not have permission to modify products!|

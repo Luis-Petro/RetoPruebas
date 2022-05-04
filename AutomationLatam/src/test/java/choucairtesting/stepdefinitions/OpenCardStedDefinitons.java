@@ -2,10 +2,9 @@ package choucairtesting.stepdefinitions;
 import choucairtesting.model.*;
 import choucairtesting.question.Answer;
 import choucairtesting.tasks.*;
-import choucairtesting.tasks.scenario1.EditProduct;
-import choucairtesting.tasks.scenario1.NavigateTo;
-import choucairtesting.tasks.scenario2.CreateNewProduct;
-import choucairtesting.tasks.scenario2.Navigate_To;
+import choucairtesting.tasks.scenario1.*;
+import choucairtesting.tasks.scenario2.*;
+import choucairtesting.tasks.scenario3.DeleteProduct;
 import cucumber.api.java.en.*;
 import cucumber.api.java.Before;
 import net.serenitybdd.screenplay.GivenWhenThen;
@@ -57,5 +56,16 @@ public class OpenCardStedDefinitons {
     @When("^fill in the product data$")
     public void fillInTheProductData(List<ProductData> Data) {
         OnStage.theActorInTheSpotlight().attemptsTo(CreateNewProduct.Create(Data));
+    }
+
+   
+
+    @When("^Select a product to delete$")
+    public void selectAProductToDelete(List<ProductData> Data) {
+        OnStage.theActorInTheSpotlight().attemptsTo(DeleteProduct.Delete(Data));
+    }
+
+    @Given("^than user navigate to the product delete screen$")
+    public void thanUserNavigateToTheProductDeleteScreen() {
     }
 }

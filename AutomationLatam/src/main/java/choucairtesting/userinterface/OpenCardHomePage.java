@@ -16,5 +16,8 @@ public class OpenCardHomePage extends PageObject {
             located(By.id("button-filter"));
     public static final Target BUTTONEDIT =  Target.the("Button Edit").
             located(net.serenitybdd.core.annotations.findby.By.xpath("//a//i[contains(@class, 'fa fa-pencil')]"));
-
+    public static final Target CHECKBOX =  Target.the("Check Box").
+            located(net.serenitybdd.core.annotations.findby.By.xpath("//*[@id=\"form-product\"]/div/table/tbody/tr/td[1]/input"));
+    public static final Target BUTTONDELETE =  Target.the("Botton delete product").
+            located(net.serenitybdd.core.annotations.findby.By.xpath("//button[contains(@class, 'btn btn-danger')]"));
 }
