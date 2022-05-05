@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="I as a OpenCard user" tests="3" skipped="0" failures="1" errors="0" timestamp="2022-05-04T21:44:24" hostname="CHMEPPF350WY6" time="30.032">
+<testsuite name="I as a OpenCard user" tests="3" skipped="0" failures="1" errors="0" timestamp="2022-05-04T21:55:17" hostname="CHMEPPF350WY6" time="30.233">
   <properties/>
-  <testcase name="verify that product cannot be edited" classname="I as a OpenCard user" time="14.932"/>
-  <testcase name="Create new product" classname="I as a OpenCard user" time="9.855"/>
-  <testcase name="Delete product" classname="I as a OpenCard user" time="5.237">
+  <testcase name="verify that product cannot be edited" classname="I as a OpenCard user" time="15.228"/>
+  <testcase name="Create new product" classname="I as a OpenCard user" time="9.831"/>
+  <testcase name="Delete product" classname="I as a OpenCard user" time="5.164">
     <failure message="java.lang.IllegalArgumentException: Superclass has no null constructors but no arguments were given" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Superclass has no null constructors but no arguments were given
 	at net.sf.cglib.proxy.Enhancer.emitConstructors(Enhancer.java:931)
 	at net.sf.cglib.proxy.Enhancer.generateClass(Enhancer.java:631)
@@ -24,19 +24,19 @@
 	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:186)
 	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:122)
 	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
-	at choucairtesting.tasks.scenario3.DeleteProduct.Delete(DeleteProduct.java:39)
+	at choucairtesting.tasks.scenario3.DeleteProduct.Delete(DeleteProduct.java:45)
 	at choucairtesting.stepdefinitions.OpenCardStedDefinitons.selectAProductToDelete(OpenCardStedDefinitons.java:65)
 	at ✽.Select a product to delete(src/test/resources/features/opencard.feature:48)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[May 04, 2022 4:44:24 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[May 04, 2022 4:55:17 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 100.0.4896.20 (f9d71f93d32a6487809d6f35a9670c879fe97dfe-refs/branch-heads/4896@{#203}) on port 35029
+Starting ChromeDriver 100.0.4896.20 (f9d71f93d32a6487809d6f35a9670c879fe97dfe-refs/branch-heads/4896@{#203}) on port 39053
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 04, 2022 4:44:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 04, 2022 4:55:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -48,9 +48,9 @@ INFO: Detected dialect: W3C
 
 TEST PASSED: verify that product cannot be edited
 ----------------------------------------------------------------------------
-May 04, 2022 4:44:39 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+May 04, 2022 4:55:32 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-May 04, 2022 4:44:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 04, 2022 4:55:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -62,9 +62,9 @@ INFO: Detected dialect: W3C
 
 TEST PASSED: Create new product
 ----------------------------------------------------------------------------
-May 04, 2022 4:44:48 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+May 04, 2022 4:55:42 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-May 04, 2022 4:44:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 04, 2022 4:55:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] ERROR net.serenitybdd.core.Serenity - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
